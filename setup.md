@@ -20,7 +20,7 @@ Option 2 (Using CLI):
 
 ~~~
 cd Desktop/
-curl -O {{ page.root }}/data/data-shell.zip
+curl -O {{ site.url }}/data/data-shell.zip
 unzip data-shell.zip
 ~~~
 {: .language-bash}
