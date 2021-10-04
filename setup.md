@@ -25,10 +25,10 @@ unzip data-shell.zip
 ~~~
 {: .language-bash}
 
-By default `curl` command writes the content into Stdout and you should redicet by using `>` notation. But as most command line programs, `curl` too has a lot of helpful options. Here we used `-O` flag to tell curl to use the same filename as the source.
-Check `man curl` for additional parameters and explanation
+By default `curl` command writes the content into Stdout and you should redirect it by using `>` notation. Here we used `-O` flag to tell curl to use the same filename as the source.
+Check `man curl` or `curl --help` for additional parameters and their explanation.
 
-Other similar command is `wget` that lets you download files from internet. *If* it is installed you can use that, check `man wget` first.
+Other similar command is `wget` that lets you download files from internet. *If* it is available on your system you can use that, check `wget --help` first.
 
 
 > ## Where to type commands: How to open a new shell

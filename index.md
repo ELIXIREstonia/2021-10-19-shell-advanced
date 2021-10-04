@@ -10,18 +10,25 @@ More importantly,
 it helps them combine existing programs in new ways
 and automate repetitive tasks
 so they aren't typing the same things over and over again.
-Use of the shell is fundamental to using a wide range of other powerful tools 
+Use of the shell is fundamental to using a wide range of other powerful tools
 and computing resources (including "high-performance computing" supercomputers).
 These lessons will start you on a path towards using these resources effectively.
 
 > ## Prerequisites
 >
-> This lesson guides you through the basics of file systems and the
-> shell.  If you have stored files on a computer at all and recognize
-> the word “file” and either “directory” or “folder” (two common words
-> for the same thing), you're ready for this lesson.
+> This lesson is follow-up for the [shell-novice](https://elixirestonia.github.io/2021-09-28-shell-novice/) lesson.
 >
-> If you're already comfortable manipulating files and directories,
-> searching for files with `grep` and `find`, and writing simple loops
-> and scripts, you probably want to explore the next lesson: [shell-extras](https://carpentries-incubator.github.io/shell-extras/).
+>
+> Before you attempt to tackle the instructions here, make sure you feel comfotable
+> or at least familiar with command line:
+>
+> ~~~
+> `pwd`, `cd`, `ls`,
+> `cat`, `cut`,
+> `wc`, `sort`, `head`, `tail`,
+> `mv`, `cp`, `rm`,
+> `mkdir`,
+> `grep` and `find`
+> ~~~
+> {: .output}
 {: .prereq}

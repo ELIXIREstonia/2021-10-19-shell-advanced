@@ -1,7 +1,7 @@
 ---
 title: Aliases and bash customization
-teaching: 10 minutes
-exercises: 0
+teaching: 15
+exercises: 5
 questions:
 - How do I customize my bash environment?
 objectives:
@@ -14,7 +14,6 @@ keypoints:
   bash environment.
 - The `PS1` system variable can be changed to customize your bash
   prompt.
-
 ---
 
 Bash allows us to customize our environments to fill our own
@@ -48,7 +47,7 @@ pwd
 ~~~
 /usr
 ~~~
-{ .output}
+{: .output}
 
 We can also remove a shortcut with `unalias`.
 
@@ -109,6 +108,50 @@ if [ -f $HOME/.bashrc ]; then
 fi
 ~~~
 {: .bash}
+
+> ## Adding an alias to `.bashrc`
+>
+> Add one or more alias to your `.bashrc` file. Aliases can be very helpful little
+> things. Too many and complicated aliases can become difficult to manage. Also do
+> keep in mind not to overwrite existing commands. Bash won't complain, but confusion
+> could be real. Try to keep it simple and memorable.
+>
+> Fox example, what would happen if you would create the following alias?
+>
+> ~~~
+> alias cd='ls -lA'
+> ~~~
+> {: .language-bash}
+> Best not to try?
+>
+>
+> Consider following aliases, is any of those worthy addition to your `.bashrc` file? What do they do?
+>
+> ~~~
+> alias ll='ls -l'
+> alias rm='rm -v'
+> alias psu='ps -u $USER -f'
+> ~~~
+> {: .language-bash}
+> > ## Solution
+> >
+> > It would mask the `cd` command and your session would no longer have direct access
+> > to it. Essentially you would get stuck in the folder you are currently because any
+> > attempt to use `cd` would look to Bash as `ls -lA` command with the same arguments.
+> > So instead of navigating to destination folder you would see a list of all the files
+> > in that folder. DO NOT TRY THIS AT HOME :)
+> >
+> > ~~~
+> > # one of the most common ls alias, show files and folder long list format
+> > alias ll='ls -l'
+> > # make rm command alway verbose
+> > alias rm='rm -v'
+> > # show $USER running processes
+> > alias psu='ps -u $USER -f'
+> > ~~~
+> > {: .language-bash}
+> {: .solution}
+{: .challenge}
 
 ## Customizing your prompt
 

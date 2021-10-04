@@ -1,13 +1,19 @@
 ---
 title: Shell Variables
-teaching: 10
-exercises: 0
+teaching: 15
+exercises: 10
 questions:
 - "How to change shell variables"
 objectives:
 - "Understanding shell variables"
 keypoints:
-- "FIXME"
+- "Use `set` command to get overview of all defined environment variables"
+- "Bash uses `PATH` variable as shell’s search path for executable programs. I.e
+  executables in those folders can be executed wihout typing full path."
+- "If identically names executable is in multiple folder on `PATH`, only one of them
+  is used. Use `which` command to know."
+- "Environment variables can be exported, so they would be available also whitin child
+  processes"
 ---
 
 The shell is just a program, and like other programs, it has variables.
