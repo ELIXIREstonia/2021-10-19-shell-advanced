@@ -139,6 +139,26 @@ the shell does the replacement *before* running the program we've asked for.
 Thanks to this expansion, what we actually run is `echo /home/vlad`,
 which displays the right thing.
 
+> ## Common modification to PATH
+>
+> One of the more common ways to add your own local programs to PATH is to modify
+> PATH variable in `.bashrc` file
+>
+> ~~~
+> export PATH=~/bin/:$PATH
+> ~~~
+> {: .bash}
+> Assuming you have `bin` directory at your home folder with your local executables (programs), for example you have script called `hello.sh` in there. This will add `bin`
+> folder to bash search path for programs and now you can execute `hello.sh` from
+> anywhere without the need to provide path to the program.
+>
+> If executables are in subfolders of `bin`, then you either need to move them to `bin`
+> or add also the subfolders to `PATH`, as by default bash does not search executables
+> from subfolders.
+>
+{: .callout}
+
+
 ## Creating and Changing Variables
 
 Creating a variable is easy&mdash;we just assign a value to a name using "=":
@@ -177,7 +197,7 @@ which meant something really important decades ago,
 and is now just a convention everyone follows without understanding why.)
 
 For example,
-here are two lines in `/home/vlad/.bashrc`:
+here are three lines in `/home/vlad/.bashrc`:
 
 ~~~
 export SECRET_IDENTITY=Dracula
