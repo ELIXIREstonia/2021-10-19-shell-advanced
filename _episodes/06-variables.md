@@ -113,9 +113,11 @@ since the directory `/users/vlad` isn't in `PATH`.
 > export PATH=~/bin/:$PATH
 > ~~~
 > {: .bash}
-> Assuming you have `bin` directory at your home folder with your local executables (programs), for example you have script called `hello.sh` in there. This will add `bin`
+> Assuming you have `bin` directory at your home folder with your local executables
+> (programs), for example you have script called `hello.sh` in there. This will add `bin`
 > folder to bash search path for programs and now you can execute `hello.sh` from
-> anywhere without the need to provide path to the program.
+> anywhere without the need to provide path to the program. Sometimes `~/bin/` is already
+> added to the `PATH` by system administrator.
 >
 > If executables are in subfolders of `bin`, then you either need to move them to `bin`
 > or add also the subfolders to `PATH`, as by default bash does not search executables
